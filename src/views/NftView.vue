@@ -31,41 +31,7 @@
         <h1>Welcome to Nft page</h1>
      
         </div>
-        <div class="flex">
-  <div class="w-1/4">
-    <!-- Left Div -->
-    Left Content
-  </div>
-  <div class="w-3/4">
-    <!-- Right Div -->
-    <div class="flex flex-col h-full">
-      <div class="flex">
-        <!-- Top Div -->
-        <div class="w-1/4">
-          <!-- First Inline Div -->
-          First
-        </div>
-        <div class="w-1/4">
-          <!-- Second Inline Div -->
-          Second
-        </div>
-        <div class="w-1/4">
-          <!-- Third Inline Div -->
-          Third
-        </div>
-        <div class="w-1/4">
-          <!-- Fourth Inline Div -->
-          Fourth
-        </div>
-      </div>
-      <div>
-        <!-- Bottom Div -->
-        Bottom Content
-      </div>
-    </div>
-  </div>
-</div>
-
+       
       </body>
       </template>
       

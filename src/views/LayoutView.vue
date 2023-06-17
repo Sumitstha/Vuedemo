@@ -120,7 +120,7 @@
    
 export default {
    
-    name:'NavBar',
+    // name:'NavBar',
     data(){
         return{
             open:false,

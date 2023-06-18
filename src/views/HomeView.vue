@@ -28,13 +28,13 @@
 
     <!-- starting of box -->
     <div class=" bg-gray-100 container mx-auto min-h-full relative">
-        <div id="one" class=" mt-8 flex  p-2 text-center">
-            <div id="left" class=" rounded-lg w-1/4 h-full relative shadow  bg-white p-2 mr-4">
+        <div id="one" class="  flex  p-2 text-center">
+            <div id="left" class=" rounded-lg w-1/4 h-full relative shadow  bg-white p-2 mb-8 mt-4 mr-4">
                 <div id="lefttop" class=" ">
                     <div class=" text-2xl font-bold ">T-Wind Multi Application</div>
                     <div class=" text-xl font-semibold text-gray-400 font-mono p-1">We design and develop clean and high quality application</div>
                     <div class="p-2">
-                        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-1 rounded-lg text-white">Create New</button>
+                        <button class="bg-blue-600 hover:bg-blue-700 px-4  rounded-lg text-white">Create New</button>
                     </div>
                 </div>
                 <div id="left bottom" class=" mt-8">
@@ -135,8 +135,8 @@
                     </div>
                     <hr />
                 </div>
-                <div>ahsksj;</div>
-                <div>ffkjkj</div>
+                <div><img class=" mt-5 mb-3" :src="ddd" alt="Mycamp" /></div>
+              
             </div>
 
         </div>
@@ -281,6 +281,7 @@ export default {
             safari: require('@/assets/images/safari.png'),
             mozilla: require('@/assets/images/mozilla.png'),
             opera: require('@/assets/images/opera.png'),
+            ddd: require('@/assets/images/dd.png'),
         };
     },
 

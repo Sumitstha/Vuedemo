@@ -1,17 +1,21 @@
 <template>
  
   <layout-view/>
+  
     <router-view/>
+    <footer-component/>
   </template>
   
   <script>
   import LayoutView from './views/LayoutView.vue'
+  import FooterComponent from './components/FooterComponent.vue';
   
   
   export default {
     name: 'App',
     components: {
       LayoutView,
+      FooterComponent,
     }
   }
   

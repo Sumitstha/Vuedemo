@@ -12,7 +12,7 @@
                                 <li class="px-1"><span>/</span></li>
                                 <li class="px-1">Dashboard</li>
                                 <li class="px-1"><span>/</span></li>
-                                <li class="text-blue-500 hover:text-blue-600 px-1">Analytics</li>
+                                <li class="text-blue-500 hover:text-blue-600 px-1">E-Commerce</li>
                             </ol>
                         </div>
                         <div class="flex items-center">

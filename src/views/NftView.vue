@@ -31,10 +31,10 @@
             <div id="d1" class=" rounded-md shadow h-full w-full pt-2  m-2 bg-white ">
                 <div class="text-center ">
 
-                    <img :src="bg" alt="bg" class="h-full p-2" />
+                    <img :src="staticData[0].bg" alt="bg" class="h-full p-2" />
 
                     <div class=" flex justify-center -mt-10">
-                        <img :src="mon" alt="mon" class="rounded-full h-20" />
+                        <img :src="staticData[0].mon" alt="mon" class="rounded-full h-20" />
                     </div>
                     <h3 class=" font-semibold text-2xl mt-1 ml-6">T-Wind#309</h3>
                     <p class="text-slate-400 font-medium mt-1 ml-4"><small> @Martin Gibson</small></p>
@@ -67,7 +67,7 @@
 
             <div id="d2" class="  h-full w-full  m-2 ">
                 <div id="d2-1" class="bg-white rounded-md mb-4">
-                    <img :src="boa" alt="boa" class="h-full pt-16 pb-16 ml-4" />
+                    <img :src="staticData[0].boa" alt="boa" class="h-full pt-16 pb-16 ml-4" />
                 </div>
 
                 <div id="d2-2" class=" rounded-md my-2 flex justify-between">
@@ -127,7 +127,7 @@
                     <hr />
                 </div>
                 <div class="p-5">
-                    <img :src="char" alt="oop" class="h-60" />
+                    <img :src="staticData[0].char" alt="oop" class="h-60" />
                 </div>
 
             </div>
@@ -161,7 +161,7 @@
                   </div>
 
                   <div>
-                    <img :src="n3" alt="n3" class=" rounded-lg" />
+                    <img :src="staticData[0].n3" alt="n3" class=" rounded-lg" />
                   </div>
 
                   <div class="flex justify-between">
@@ -185,7 +185,7 @@
                   </div>
 
                   <div>
-                    <img :src="n4" alt="n4" class=" rounded-lg" />
+                    <img :src="staticData[0].n4" alt="n4" class=" rounded-lg" />
                   </div>
 
                   <div class="flex justify-between">
@@ -209,7 +209,7 @@
                   </div>
 
                   <div>
-                    <img :src="n5" alt="n5" class=" rounded-lg" />
+                    <img :src="staticData[0].n5" alt="n5" class=" rounded-lg" />
                   </div>
 
                   <div class="flex justify-between">
@@ -233,7 +233,7 @@
                   </div>
 
                   <div>
-                    <img :src="n6" alt="n6" class=" rounded-lg" />
+                    <img :src="staticData[0].n6" alt="n6" class=" rounded-lg" />
                   </div>
 
                   <div class="flex justify-between">
@@ -257,7 +257,7 @@
                   </div>
 
                   <div>
-                    <img :src="n7" alt="n7" class=" rounded-lg" />
+                    <img :src="staticData[0].n7" alt="n7" class=" rounded-lg" />
                   </div>
 
                   <div class="flex justify-between">
@@ -291,8 +291,9 @@
 export default {
     //   components:{LayoutView}
     data() {
-        return {
-            bg: require('@/assets/widgets/bg-1.jpg'),
+        const staticData = [
+      {
+        bg: require('@/assets/widgets/bg-1.jpg'),
             mon: require('@/assets/widgets/nft-1.png'),
             boa: require('@/assets/widgets/boa.png'),
             char: require('@/assets/images/gol.png'),
@@ -301,10 +302,14 @@ export default {
             n5: require('@/assets/widgets/nft-5.png'),
             n6: require('@/assets/widgets/nft-6.png'),
             n7: require('@/assets/widgets/nft-7.png'),
-        }
+      }
+    ];
+        return {
+            staticData
+        };
     }
 
-}
+};
 </script>
 
 <style >
